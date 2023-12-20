@@ -17,4 +17,9 @@
       aliquid omnis, dolore eius.
     </p>
   </body>
+     <script>
+      fetch("https://newsapi.org/v2/top-headlines?&country=us&category=sport&pageSize=10&page=1&apiKey=0dce433255314c708487fa7cedc66e2f").then(res=> res.json()).then(data=>{
+        document.write(data.articles[0].author)
+      })
+    </script>
 </html>
