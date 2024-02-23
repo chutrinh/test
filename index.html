@@ -16,10 +16,16 @@
       provident facilis sint numquam nostrum nisi voluptate autem corrupti in
       aliquid omnis, dolore eius.
     </p>
+    <h1>hello là xin chào develop</h1>
+    <h2>test branch test</h2>
   </body>
-     <script>
-      fetch("https://newsapi.org/v2/top-headlines?&country=us&category=sport&pageSize=10&page=1&apiKey=0dce433255314c708487fa7cedc66e2f").then(res=> res.json()).then(data=>{
-        alert(data.articles[0].author)
-      })
-    </script>
+  <script>
+    fetch(
+      "https://newsapi.org/v2/top-headlines?&country=us&category=sport&pageSize=10&page=1&apiKey=0dce433255314c708487fa7cedc66e2f"
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        alert(data.articles[0].author);
+      });
+  </script>
 </html>
